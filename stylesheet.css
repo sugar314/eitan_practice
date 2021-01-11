@@ -2,13 +2,12 @@
         width: 40vw;
         margin: 2vh 0 0 0;
         bottom: 80%;
-		color:5f5d60; 
+		  color:5f5d60; 
       font-size: 30px;
         font-family: Verdana, sans-serif;
         display: inline-block;
         position: relative;
     }
-
 
 	body {
         margin:0 ;
@@ -67,7 +66,7 @@
 		-webkit-backface-visibility: hidden;
     perspective: 1000;
   }
-  @media(max-width:896px){
+  @media(max-width:600px){
     #card-front, #card-back{
       height:27vh;
     }
@@ -78,7 +77,7 @@
     }
   }
 
-  @media(max-width:500px){
+  @media(max-width:600px){
     #card{
       margin-bottom: 30vh;
     }    
@@ -142,7 +141,7 @@
 		opacity: 0.8;
     }
 
-  @media(max-width:896px){
+  @media(max-width:600px){
     .ans{
     font-size: 14px;
     height: 14vh;
@@ -221,19 +220,23 @@
     display: block;
     font-size: 32px;
   }
-  @media(max-width:896px){
-    #modal-title-1{
-      display: none;
-    }
-  }
   #modal-title-2{
     display: none;
   }
-  @media(max-width:480px){
+  @media(max-width:600px){
+    .modal-title{
+      margin-top: 50px;
+    }
+
+    #modal-title-1{
+      display: none;
+      font-size: 32px;
+    }
+
     #modal-title-2{
       display: block;
       line-height: 0%;
-      margin-bottom: 18px;
+      margin-bottom: 30px;
       font-size: 28px;
     }
   }
@@ -272,7 +275,7 @@
     line-height: 10vh;
   }
 
-  @media (max-width:896px){
+  @media (max-width:600px){
     .ti {
       font-size: 16px;
       height: 10vh;
@@ -325,7 +328,7 @@
     font-size: 28px;
   }
 
-  @media(max-width:896px){
+  @media(max-width:600px){
     #re{
       font-size: 16px;
     }
