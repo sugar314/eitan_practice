@@ -48,25 +48,39 @@
     position: relative;
     cursor: pointer;
     vertical-align: middle;
-    font-size: 24px;
-    line-height: 35vh;
+    font-size: 28px;
+    line-height: 32vh;
     perspective: 100px;
     position: relative;
         transition: transform .8s;
         transform-style: preserve-3d;
+  }
+  @media(max-width:750px){
+    #card{
+      font-size: 20px;
+      margin-bottom: 20vh;
+      line-height: 27vh;
+    }
   }
 
 	#card-front, #card-back {
     display: block;
     padding-top:0 ;
 		width: 100%;
-		height: 35vh;
+		height: 32vh;
 		border-radius: 5px;
 		position: absolute;
 		-webkit-backface-visibility: hidden;
     perspective: 1000;
   }
-  
+  @media(max-width:750px){
+    #card-front, #card-back{
+      height:27vh;
+
+    }
+  }
+
+
 	#card-front {
 		background: #fff;
     color: #333;
@@ -116,7 +130,7 @@
 		background:#3cb371;
     box-shadow: 0 4px 0 #006400;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -125,9 +139,11 @@
 		opacity: 0.8;
     }
 
-  @media(min-width:670px){
+  @media(max-width:750px){
     .ans{
-    font-size: 20px;
+    font-size: 14px;
+    height: 14vh;
+    line-height: 14vh;
     }
   }
 	html,body { height:100%; }
@@ -153,6 +169,8 @@
     /*モーダル*/
     .unit-modal-wrapper {
     position: fixed;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -191,7 +209,7 @@
     color: #5f5d60;
     letter-spacing: 1px;
     margin-bottom: 20px;
-    margin-top: 5vh;
+    margin-top: 1vh;
   }
   
   #modal-title-1{
@@ -249,18 +267,19 @@
     line-height: 10vh;
   }
 
-  @media (max-width:1000px){
-    .ti{
-      color: red;
-      font-size: 22px;
-    }
-  }
-
-
-  @media (max-width:670px){
-    .ti{
-      color: red;
+  @media (max-width:750px){
+    .ti {
       font-size: 16px;
+      height: 10vh;
+      margin-left: 5vw;
+    }
+    #signup-form input{
+    width: 40vw;
+    height: 10vh;
+    margin: 3vh 0 0 5vw;
+    font-size: 18px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
     }
   }
 
