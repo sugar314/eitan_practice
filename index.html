@@ -1,0 +1,68 @@
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>英単語カード</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>	
+    
+
+     <!-- モーダル部分 -->
+  <div class="unit-modal-wrapper" id='signup-modal'>
+    <div class="modal">
+      <div>
+        <i class="fa fa-2x fa-times" id='close-modal'></i>
+      </div>
+      <div id="signup-form">
+        <h2 class="modal-title" id="modal-title-1">Unit番号を登録してください</h2>
+        <h2 class="modal-title" id="modal-title-2">
+            <p class="modal-title">Unit番号を</p>
+            <p class="modal-title">登録してください</p>
+          </h2>
+        <form action="#">
+          <h3 id='start'  class="ti">始</h3>
+          <input class="form-control" id="min" type="number" placeholder="Unitの始まり">
+          <h3 id='end' class="ti">終</h3>
+          <input class="form-control" id="max"    type="number" placeholder="Unitの終わり">
+          <div id="re">決定</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- モーダルここまで -->
+
+    
+
+	<div class="title-top">
+    <h1></h1>	
+    <h2 id="mode" class="en-to-ja">英語→日本語</h2>
+  </div>
+
+	<div id="card">
+		<div id="card-front" class='card-text'></div>
+		<div id="card-back" class='card-text'></div>
+  </div>
+
+  <div class="clear"></div>
+  
+  <div id="ans-wrapper">
+    <div id="ans1" class="ans">1</div>
+    <div id="ans2" class="ans">2</div>
+    <div id="ans3" class="ans">3</div>
+    <div id="ans4" class="ans">4</div>
+  </div>
+
+  <div id="btn">NEXT</div>
+    
+
+
+
+
+<script src="script.js">
+  
+</script>
+    
+</body>
+</html>
