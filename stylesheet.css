@@ -55,13 +55,6 @@
         transition: transform .8s;
         transform-style: preserve-3d;
   }
-  @media(max-width:750px){
-    #card{
-      font-size: 20px;
-      margin-bottom: 20vh;
-      line-height: 27vh;
-    }
-  }
 
 	#card-front, #card-back {
     display: block;
@@ -73,13 +66,22 @@
 		-webkit-backface-visibility: hidden;
     perspective: 1000;
   }
-  @media(max-width:750px){
+  @media(max-width:896px){
     #card-front, #card-back{
       height:27vh;
-
+    }
+    #card{
+      font-size: 20px;
+      margin-bottom: 25vh;
+      line-height: 27vh;
     }
   }
 
+  @media(max-width:500px){
+    #card{
+      margin-bottom: 30vh;
+    }    
+  }
 
 	#card-front {
 		background: #fff;
@@ -139,13 +141,15 @@
 		opacity: 0.8;
     }
 
-  @media(max-width:750px){
+  @media(max-width:896px){
     .ans{
     font-size: 14px;
     height: 14vh;
     line-height: 14vh;
     }
   }
+
+
 	html,body { height:100%; }
 	
 	#visual { height:100%; }
@@ -216,7 +220,7 @@
     display: block;
     font-size: 32px;
   }
-  @media(max-width:670px){
+  @media(max-width:896px){
     #modal-title-1{
       display: none;
     }
@@ -224,7 +228,7 @@
   #modal-title-2{
     display: none;
   }
-  @media(max-width:670px){
+  @media(max-width:480px){
     #modal-title-2{
       display: block;
       line-height: 0%;
@@ -267,7 +271,7 @@
     line-height: 10vh;
   }
 
-  @media (max-width:750px){
+  @media (max-width:896px){
     .ti {
       font-size: 16px;
       height: 10vh;
@@ -320,13 +324,7 @@
     font-size: 28px;
   }
 
-  @media(max-width:1000px){
-    #re{
-      font-size: 22px;
-    }
-  }
-
-  @media(max-width:670px){
+  @media(max-width:896px){
     #re{
       font-size: 16px;
     }
