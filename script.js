@@ -1657,12 +1657,14 @@ $(function() {
             $('#mode').text("日本語→英語");
             $('#card-front').text(words[rand].ja);
             $('#card-back').text(words[rand].en); 
+            setAnsEn();
             
         } else{
             $('#mode').addClass("en-to-ja");
             $('#mode').text("英語→日本語");
             $('#card-front').text(words[rand].en);
             $('#card-back').text(words[rand].ja);
+            setAnsJa();
         }        
     });
 
@@ -1696,6 +1698,7 @@ $(function() {
         if($('#card').hasClass('open')){
             $('#card').removeClass('open').delay(600).queue(function(next){
                 jSet();
+                $("#card-back").css('background', '#5dca88')
                 next();
             });
         }else{
@@ -1709,12 +1712,23 @@ $(function() {
         if($('#card').hasClass('open')){
             $('#card').removeClass('open').delay(600).queue(function(next){
                 eSet();
+                $("#card-back").css('background', '#5dca88')
                 next();
             });
         }else{
             eSet();
         }
     }
+
+    ///解答ボタン
+    $('.ans').click(function(){
+        flip();
+        if($(this).text()===$('#card-back').text()){
+            $("#card-back").css('background', '#ff7474');
+        }else{
+            $("#card-back").css('background', '#2181ff');
+        }
+    });
     
 
 });
