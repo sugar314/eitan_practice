@@ -37,6 +37,7 @@
   @media(max-width:600px){
     #mode{
       font-size:10px;
+      margin-top: 55px;
     }
   }
 
