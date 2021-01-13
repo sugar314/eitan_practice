@@ -279,15 +279,17 @@
     .ti {
       font-size: 16px;
       height: 10vh;
-      margin-left: 5vw;
+      margin-left: -3vw;
     }
     #signup-form input{
-    width: 40vw;
+    width: 50vw;
     height: 10vh;
-    margin: 3vh 0 0 5vw;
+    margin: 3vh 0 0 -1vw;
     font-size: 18px;
     border: 1px solid #d0d5d8;
     border-radius: 5px;
+
+    width: 50vw;
     }
   }
 
@@ -331,5 +333,7 @@
   @media(max-width:600px){
     #re{
       font-size: 16px;
+      left: 14%;
+      width: 50vw;
     }
   }
